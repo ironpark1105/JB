@@ -1,0 +1,311 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .text-15{
+    font-size: 15px;
+  }
+
+  .text-14{
+    font-size: 14px;
+  }
+  
+  body {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #main-header {
+    position: relative;
+    width: 1000px;
+    height: 90px;
+    /* background: #ccc; */
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #main-header > h1 {
+    float: left;
+    margin-top: 26px;
+  }
+  
+  #main-header > #gnb {
+    float: right;
+    /* outline: 1px solid; */
+    margin-top: 32px;
+  }
+  
+  #gnb > ul > li {
+    display: inline-block;
+    margin-left: 56px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  #gnb > ul > li > a {
+    color: #000;
+  }
+  
+  #main-visual {
+    /* 배경추가 > 1000 x 440 > 중앙정렬 */
+  background-image: url(./images/main-visual.jpg);
+  width: 1000px;
+  height: 440px;
+  margin: 0 auto;
+  background-size: cover;
+  }
+
+  #main-visual h2{
+      color: #fff;
+      padding-top: 100px;
+      margin-left: 28px;
+      font-size: 34px;
+      font-weight: 400;
+  }
+  
+  #main-visual p{
+    color: #fff;
+    padding-top: 20px;
+    margin-left: 28px;
+    font-weight: 400;
+    font-size: 20px;
+}
+  
+
+#notice{
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    border: #ccc 1px solid;
+    overflow: hidden;
+}
+/* overflow: hidden 시키면 프롯 레프트 자동 클리어 됨  */
+
+/* 경영공시 */
+.notice-title{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+.notice-title h2{
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.notice-title p{
+    float: left;
+    margin-left: 14px;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+
+.notice-title a{
+    float: right;
+    margin-right: 40px;
+    font-size: 30px;
+    color: #707070;
+}
+
+/*보도자료 */
+
+.news-title{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    float: left;
+    left: 500px;
+}
+
+.news-title h2{
+    float: left;
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.news-title p{
+    float: left;
+    margin-left: 14px;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+
+
+.news-title a{
+  float: right;
+  margin-right: 40px;
+  font-size: 30px;
+  color: #707070;
+}
+/* 사진 4개 */
+#sections{
+    width: 1000px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.col {
+  width: 235px;
+  height: 160px;
+  background: #999;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+/* 
+선택자 */
+.col:last-child{
+  margin: 0;
+}
+.col:nth-child(1){
+  background-image: url(./images/에너지.jpg);
+  background-size: cover;
+}
+.col:nth-child(2){
+  background-image: url(./images/부동산.jpg);
+  background-size: cover;
+}
+.col:nth-child(3){
+  background-image: url(./images/자산관리.jpg);
+  background-size: cover;
+}
+.col:nth-child(4){
+  background-image: url(./images/증권.gif);
+  background-size: cover;
+}
+
+.title{
+
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 48px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/* 
+.col{
+    width: 235px;
+    height: 160px;
+    float: left;
+    margin-right: 20px;
+    background-image: url(./images/에너지.jpg);
+    background-size:cover;
+    z-index: 0;
+}
+
+.col2{
+    width: 235px;
+    height: 160px;
+    float: left;
+    background-image: url(./images/부동산.jpg);
+    background-size:cover;
+}
+
+.col3{
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 235px;
+    height: 160px;
+    float: left;
+    background-image: url(./images/자산관리.jpg);
+    background-size:cover;
+}
+.col4{
+    width: 235px;
+    height: 160px;
+    float: left;
+    background-image: url(./images/증권.gif);
+    background-size:cover;
+} */
+
+/* 
+.title{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 11px;
+    width: 235px;
+    height: 48px;
+    opacity: 0.8;
+    margin-top: 112px;
+    background-color: #000;
+} */
+
+
+
+
+
+#foot{
+    width: 1000px;
+    height: 163px;
+    background-color: #ccc;
+    margin: 0 auto;
+    /* background: #ccc; */
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo{
+      margin-top: 30px;
+      width: 220px;
+      float: left;
+  }
+
+  #foot > h1 {
+    margin-top: 26px;
+  }
+
+  #gnb2 { 
+      
+    margin-top: 30px;
+      float: left;
+      width: 500px;
+    /* outline: 1px solid; */
+  }
+  
+  #gnb2 > ul > li {
+    display: inline-block;
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    font-size: 14px;
+  }
+  
+  #gnb2 > ul > li > a {
+    color: #000;
+  }
+
+  #gnb2 p{
+      margin-left: 10px;
+      margin-top: 8px;
+  }
